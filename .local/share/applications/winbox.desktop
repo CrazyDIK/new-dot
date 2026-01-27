@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=WinBox
+Exec=/home/dkadmin/soft/winbox/WinBox.sh
+Type=Application
+Icon=/home/dkadmin/soft/winbox/assets/img/winbox.png
+Terminal=false
+Categories=Utility;
