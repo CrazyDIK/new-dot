@@ -18,7 +18,6 @@
 
 # Initial scale (optimal/fit/width/height/fill/real)
 scale = optimal
-
 # Start in full screen mode (yes/no)
 fullscreen = no
 
