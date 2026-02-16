@@ -6,3 +6,5 @@ rm -rf ~/.zshrc
 rm -rf ~/.p10k.zsh
 
 stow .
+
+chsh -s $(which zsh)
