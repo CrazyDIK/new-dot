@@ -2,7 +2,7 @@
 
 sudo pacman -Syyu --noconfirm
 
-sudo pacman -Sy --noconfirm zsh git firefox eza bat stow alacritty fzf neovim npm pavucontrol waybar zip unzip thunar gvfs xdg-utils thunar-volman tumbler ffmpegthumbnailer swayimg ttf-jetbrains-mono-nerd
+sudo pacman -Sy --noconfirm zsh git firefox eza bat stow alacritty fzf neovim npm pavucontrol waybar zip unzip thunar gvfs xdg-utils thunar-volman tumbler ffmpegthumbnailer swayimg ttf-jetbrains-mono-nerd rhythmbox swaync
 
 sh ./omz.sh
 #sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
