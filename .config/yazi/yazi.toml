@@ -1,6 +1,6 @@
 # A TOML linter such as https://taplo.tamasfe.dev/ can use this schema to validate your config.
 # If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
-"$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
+# "$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
 
 [mgr]
 ratio          = [ 1, 4, 3 ]
@@ -27,6 +27,7 @@ image_filter    = "triangle"
 image_quality   = 75
 ueberzug_scale  = 1
 ueberzug_offset = [ 0, 0, 0, 0 ]
+ueberzug_backend = "kitty"
 
 [opener]
 edit = [
@@ -100,6 +101,9 @@ fetchers = [
 	{ id = "mime", url = "*/",         run = "mime.dir", prio = "high" },
 	{ id = "mime", url = "local://*",  run = "mime.local", prio = "high" },
 	{ id = "mime", url = "remote://*", run = "mime.remote", prio = "high" },
+]
+prepend_fetchers = [
+	{ id = "icon", name = "*", run = "icon" },
 ]
 spotters = [
 	{ url = "*/", run = "folder" },

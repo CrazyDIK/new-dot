@@ -3,5 +3,20 @@ use = "yazi-rs/plugins:piper"
 rev = "e07bf41"
 hash = "25aee698dd1081001008ce0cb1cc4da3"
 
+# [[plugin.deps]]
+# use = "yazi-rs/plugins:icon"
+# rev = "e07bf41"
+# hash = "99aa06d3014798d86001c324468d497f"
+
+[[plugin.deps]]
+use = "yazi-rs/flavors:gruvbox"
+rev = "349d27f"
+hash = "99aa06d3014798d86001c324468d497f"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "1962818"
+hash = "26db011a778f261d730d4f5f8bf24b3f"
+
 [flavor]
 deps = []

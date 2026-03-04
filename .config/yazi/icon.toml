@@ -1,0 +1,131 @@
+# Gruvbox icon theme for yazi
+
+[icon]
+files = [
+  Gruvbox colors
+  fg = "#ebdbb2"  # fg1
+  fg = "#d5c4a1"  # fg2
+  fg = "#bdae93"  # fg3
+  fg = "#a89984"  # fg4
+  bg = "#282828"  # bg0
+  bg = "#1d2021"  # bg1
+  red = "#cc241d"
+  green = "#98971a"
+  yellow = "#d79921"
+  blue = "#458588"
+  purple = "#b16286"
+  aqua = "#689d6a"
+  orange = "#d65d0e"
+]
+
+# Filetype icons
+[icon.files]
+# Documents
+"pdf" = { text = "", fg = "#cc241d" }
+"doc" = { text = "", fg = "#458588" }
+"docx" = { text = "", fg = "#458588" }
+"txt" = { text = "", fg = "#a89984" }
+"rtf" = { text = "", fg = "#a89984" }
+"md" = { text = "", fg = "#ebdbb2" }
+"tex" = { text = "ﭨ", fg = "#ebdbb2" }
+
+# Code
+"js" = { text = "", fg = "#fabd2f" }
+"ts" = { text = "ﯤ", fg = "#458588" }
+"py" = { text = "", fg = "#8ec07c" }
+"rb" = { text = "", fg = "#cc241d" }
+"go" = { text = "ﳑ", fg = "#458588" }
+"rs" = { text = "", fg = "#fe8019" }
+"c" = { text = "", fg = "#458588" }
+"cpp" = { text = "", fg = "#458588" }
+"h" = { text = "", fg = "#458588" }
+"java" = { text = "", fg = "#cc241d" }
+"php" = { text = "", fg = "#a89984" }
+"html" = { text = "", fg = "#d65d0e" }
+"css" = { text = "", fg = "#458588" }
+"json" = { text = "", fg = "#fabd2f" }
+"xml" = { text = "", fg = "#fabd2f" }
+"yaml" = { text = "", fg = "#fabd2f" }
+"yml" = { text = "", fg = "#fabd2f" }
+"toml" = { text = "", fg = "#a89984" }
+"ini" = { text = "", fg = "#a89984" }
+"sh" = { text = "", fg = "#98971a" }
+"bash" = { text = "", fg = "#98971a" }
+"zsh" = { text = "", fg = "#98971a" }
+"fish" = { text = "", fg = "#98971a" }
+"lua" = { text = "", fg = "#458588" }
+"vim" = { text = "", fg = "#98971a" }
+"neovim" = { text = "", fg = "#98971a" }
+
+# Images
+"png" = { text = "", fg = "#b16286" }
+"jpg" = { text = "", fg = "#b16286" }
+"jpeg" = { text = "", fg = "#b16286" }
+"gif" = { text = "", fg = "#b16286" }
+"svg" = { text = "", fg = "#b16286" }
+"webp" = { text = "", fg = "#b16286" }
+"ico" = { text = "", fg = "#b16286" }
+"bmp" = { text = "", fg = "#b16286" }
+
+# Audio
+"mp3" = { text = "", fg = "#b16286" }
+"wav" = { text = "", fg = "#b16286" }
+"flac" = { text = "", fg = "#b16286" }
+"ogg" = { text = "", fg = "#b16286" }
+"m4a" = { text = "", fg = "#b16286" }
+
+# Video
+"mp4" = { text = "", fg = "#d65d0e" }
+"mkv" = { text = "", fg = "#d65d0e" }
+"avi" = { text = "", fg = "#d65d0e" }
+"mov" = { text = "", fg = "#d65d0e" }
+"webm" = { text = "", fg = "#d65d0e" }
+
+# Archives
+"zip" = { text = "", fg = "#fabd2f" }
+"tar" = { text = "", fg = "#fabd2f" }
+"gz" = { text = "", fg = "#fabd2f" }
+"rar" = { text = "", fg = "#fabd2f" }
+"7z" = { text = "", fg = "#fabd2f" }
+"xz" = { text = "", fg = "#fabd2f" }
+"bz2" = { text = "", fg = "#fabd2f" }
+
+# Executables
+"exe" = { text = "", fg = "#98971a" }
+"bin" = { text = "", fg = "#98971a" }
+"app" = { text = "", fg = "#98971a" }
+"deb" = { text = "", fg = "#cc241d" }
+"rpm" = { text = "", fg = "#cc241d" }
+
+# Configs
+"conf" = { text = "", fg = "#a89984" }
+"config" = { text = "", fg = "#a89984" }
+"cfg" = { text = "", fg = "#a89984" }
+
+# Lock files
+"lock" = { text = "", fg = "#fabd2f" }
+
+# Log files
+"log" = { text = "", fg = "#a89984" }
+
+# Backup files
+"bak" = { text = "", fg = "#a89984" }
+"backup" = { text = "", fg = "#a89984" }
+
+# Default file
+"*" = { text = "", fg = "#ebdbb2" }
+
+# Directory icons
+[icon.dirs]
+"Desktop" = { text = "", fg = "#458588" }
+"Documents" = { text = "", fg = "#689d6a" }
+"Downloads" = { text = "", fg = "#d65d0e" }
+"Music" = { text = "", fg = "#b16286" }
+"Pictures" = { text = "", fg = "#b16286" }
+"Videos" = { text = "", fg = "#d65d0e" }
+"Public" = { text = "", fg = "#ebdbb2" }
+"Templates" = { text = "", fg = "#fabd2f" }
+"dotfiles" = { text = "", fg = "#a89984" }
+".git" = { text = "", fg = "#cc241d" }
+"node_modules" = { text = "", fg = "#98971a" }
+"*" = { text = "", fg = "#83a598" }

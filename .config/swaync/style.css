@@ -37,7 +37,7 @@
 @define-color noti-close-bg alpha(@gb-red, 0.3);
 @define-color noti-close-bg-hover alpha(@gb-red, 0.5);
 
-@define-color bg-selected @gb-purple-bright;
+@define-color bg-selected @gb-green-bright;
 
 /* Window behind control center and on all other monitors */
 .blank-window {
@@ -87,11 +87,13 @@
 
 .notification-content {
     outline: none;
-    margin: 10px;
+    margin: 6px;
     padding: 8px;
     border-radius: 8px;
-    border: 2px solid @gb-yellow-bright;
-    background: @cc-bg;
+    border: 2px solid transparent;
+    background:
+        linear-gradient(@cc-bg, @cc-bg) padding-box,
+        linear-gradient(to top right, @gb-yellow, @gb-green-bright) border-box;
 }
 
 .control-center .notification-content {
