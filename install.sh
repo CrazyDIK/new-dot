@@ -2,7 +2,8 @@
 
 my_name="$(whoami)"
 
-sudo sed ''
+sudo sed 's/5/15/' /etc/pacman.conf
+
 sudo pacman -Syyu --noconfirm
 
 sudo pacman -Sy --noconfirm zsh git firefox eza bat stow alacritty fzf neovim npm pavucontrol waybar zip unzip thunar gvfs xdg-utils thunar-volman tumbler ffmpegthumbnailer swayimg ttf-jetbrains-mono-nerd rhythmbox swaync
@@ -17,6 +18,8 @@ rm -rf ~/.config/kitty
 rm -rf ~/.zshrc
 rm -rf ~/.p10k.zsh
 
+sed -i '/^monitor =/c\monitor = , preferred, auto, auto' ./.config/hypr/hyprland.conf
+
 stow .
 
-chown -R $my_name:$my_name /home/$my_name/.local
+sudo chown -R $my_name:$my_name /home/$my_name/.local

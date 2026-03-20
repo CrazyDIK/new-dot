@@ -1,0 +1,61 @@
+{
+  "name": "edit_file",
+  "arguments": {
+    "display_description": "Создаем скрипт для запуска Zed и VSCodium",
+    "mode": "create",
+    "path": "/home/dkadmin/.config/rofi/apps.sh",
+    "text": "#!/bin/bash
+
+# Groovbox Style App Launcher for Rofi
+
+# Список приложений
+apps=(
+    "Zed:zed"
+    "VSCodium:vscodium"
+    "Terminal:alacritty"
+    "File Manager:thunar"
+    "Browser:firefox"
+    "Music Player:spotify"
+    "Video Player:vlc"
+    "Settings:gnome-control-center"
+)
+
+# Функция для запуска приложения
+launch_app() {
+    local app_name="$1"
+    local app_command="$2"
+
+    # Проверяем, установлено ли приложение
+    if command -v "$app_command" &> /dev/null; then
+        # Запускаем приложение
+        "$app_command" &
+        # Закрываем rofi
+        exit 0
+    else
+        # Показываем сообщение об ошибке
+        notify-send "Groovbox" "Application '$app_name' is not installed!"
+        exit 1
+    fi
+}
+
+# Генерируем список для rofi
+generate_list() {
+    for app in "${apps[@]}"; do
+        echo "$app"
+    done
+}
+
+# Основная логика
+if [[ $# -eq 0 ]]; then
+    # Показываем список приложений
+    generate_list | rofi -dmenu -i -p "Groovbox Apps" -config "/home/dkadmin/.config/rofi/config.rasi"
+else
+    # Запускаем выбранное приложение
+    local selected_app="$1"
+    local app_name="${selected_app%%:*}"
+    local app_command="${selected_app#*:}"
+
+    launch_app "$app_name" "$app_command"
+fi"
+  }
+}
