@@ -18,7 +18,7 @@ rm -rf ~/.config/kitty
 rm -rf ~/.zshrc
 rm -rf ~/.p10k.zsh
 
-sed -i '/^monitor=/c\monitor = , preferred, auto, auto' ./.config/hypr/hyprland.conf
+sed -i '/^monitor=/c\monitor=, preferred, auto, auto' ./.config/hypr/hyprland.conf
 
 stow .
 
